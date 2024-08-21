@@ -98,7 +98,7 @@
   function formSubmit(e: any) {
     e.preventDefault();
     if (input.value === "") {
-      errMsg!.innerHTML = "Por favor ingrese algo";
+      errMsg!.innerHTML = "Este campo no puede quedar vacío";
       input!.classList.add("border-red");
     } else if (!validURL(input!.value)) {
       errMsg!.innerHTML = "Por favor, ingrese una URL válida";
